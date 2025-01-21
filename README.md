@@ -1,2 +1,98 @@
-# RFM_analysis
-Этот репозиторий содержит инструменты, данные и примеры анализа клиентов логистической компании с использованием метода RFM (Recency, Frequency, Monetary). RFM-анализ помогает сегментировать клиентов на основе их покупательского поведения и определить наиболее ценные сегменты для повышения эффективности маркетинговых и бизнес-стратегий.
+# RFM-Analysis for a Logistics Company
+
+This repository contains the tools, scripts, and documentation for performing RFM (Recency, Frequency, Monetary) analysis specifically tailored for a logistics company. The goal of the project is to segment customers based on their behavior and identify opportunities to optimize customer engagement, retention, and profitability.
+
+---
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Data Requirements](#data-requirements)
+- [RFM Methodology](#rfm-methodology)
+- [Results](#results)
+- [Segmentation Strategies](#segmentation-strategies)
+
+---
+
+## Introduction
+
+RFM analysis is a powerful customer segmentation technique that helps businesses classify their customers based on the following parameters:
+
+- **Recency**: How recently a customer made a transaction.
+- **Frequency**: How often a customer makes transactions.
+- **Monetary**: How much revenue the customer generates.
+
+This project applies RFM analysis to logistics company data, focusing on:
+
+- Identifying high-value customers.
+- Analyzing customer activity trends.
+- Supporting targeted marketing campaigns.
+
+---
+
+## Features
+
+- Data preprocessing and cleansing.
+- Automated RFM score computation.
+- Customizable thresholds for RFM segmentation.
+- Visualization of customer segments and trends.
+- Actionable insights to improve customer engagement.
+
+
+---
+
+## Data Requirements
+
+The dataset should include the following columns:
+
+| Column Name          | Description                             |
+|----------------------|-----------------------------------------|
+| date                 | Date and time of the transaction.      |
+| client               | Name or identifier of the client.      |
+| transportation_mode  | Mode of transportation (e.g., SEA, AIR, ROAD, RAIL). |
+| revenue_usd          | Revenue generated in USD.              |
+| cost_usd             | Cost incurred in USD.                  |
+| profit_usd           | Profit generated in USD.               |
+| margin_percent       | Profit margin percentage.              |
+
+Ensure the data is in CSV format and cleaned of duplicates or missing values.
+
+---
+
+## RFM Methodology
+
+1. **Data Preprocessing**: Clean and format raw data for analysis.
+2. **Score Calculation**:
+   - Assign scores (1-3) for each RFM metric based on thresholds derived from quantiles.
+   - Combine scores to form a composite RFM score.
+3. **Segmentation**:
+   - Group customers into segments (e.g., Champions, Loyal, At-Risk) based on RFM scores.
+4. **Visualization**: Generate plots to visualize segments and trends.
+
+---
+
+## Results
+
+- **Insights**: Identify key customer groups driving revenue.
+- **Reports**: Detailed visualizations for stakeholders.
+
+---
+
+## Segmentation Strategies
+
+- **Segment 111 (Low Value, Low Activity)**:
+  - Target with special discounts and reminders.
+  - Minimize investment as effectiveness may be low.
+
+- **Segment 333 (High Value, High Activity)**:
+  - Retain loyalty with personalized offers and exclusive bonuses.
+  - Upsell premium services and products.
+
+- **Segment 222 (Medium Value, Medium Activity)**:
+  - Encourage through regular promotions and personalized recommendations.
+  - Motivate to increase spending with bonuses.
+
+- **Segment 233 (Low Frequency, High Monetary)**:
+  - Send reminders for seasonal offers.
+  - Promote premium services to boost engagement.
