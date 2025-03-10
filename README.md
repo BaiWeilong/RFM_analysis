@@ -12,7 +12,6 @@ This repository contains the tools, scripts, and documentation for performing RF
 - [Data Requirements](#data-requirements)
 - [RFM Methodology](#rfm-methodology)
 - [Results](#results)
-- [Segmentation Strategies](#segmentation-strategies)
 
 ---
 
