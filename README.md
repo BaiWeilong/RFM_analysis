@@ -1,6 +1,7 @@
 # RFM-Analysis for a Logistics Company
 
 This repository contains the tools, scripts, and documentation for performing RFM (Recency, Frequency, Monetary) analysis specifically tailored for a logistics company. The goal of the project is to segment customers based on their behavior and identify opportunities to optimize customer engagement, retention, and profitability.
+![dashboard](https://github.com/user-attachments/assets/57747b27-8d4b-4664-96a8-a167c228cb0a)
 
 ---
 
@@ -64,7 +65,7 @@ Ensure the data is in CSV format and cleaned of duplicates or missing values.
 
 1. **Data Preprocessing**: Clean and format raw data for analysis.
 2. **Score Calculation**:
-   - Assign scores (1-3) for each RFM metric based on thresholds derived from quantiles.
+   - Assign scores (1-5) for each RFM metric based on thresholds derived from quantiles.
    - Combine scores to form a composite RFM score.
 3. **Segmentation**:
    - Group customers into segments (e.g., Champions, Loyal, At-Risk) based on RFM scores.
@@ -76,23 +77,3 @@ Ensure the data is in CSV format and cleaned of duplicates or missing values.
 
 - **Insights**: Identify key customer groups driving revenue.
 - **Reports**: Detailed visualizations for stakeholders.
-
----
-
-## Segmentation Strategies
-
-- **Segment 111 (Low Value, Low Activity)**:
-  - Target with special discounts and reminders.
-  - Minimize investment as effectiveness may be low.
-
-- **Segment 333 (High Value, High Activity)**:
-  - Retain loyalty with personalized offers and exclusive bonuses.
-  - Upsell premium services and products.
-
-- **Segment 222 (Medium Value, Medium Activity)**:
-  - Encourage through regular promotions and personalized recommendations.
-  - Motivate to increase spending with bonuses.
-
-- **Segment 233 (Low Frequency, High Monetary)**:
-  - Send reminders for seasonal offers.
-  - Promote premium services to boost engagement.
